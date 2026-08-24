@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>What is Ranked-Choice Voting? — BetterBallot Initiative</title>
+<meta name="description" content="How proportional ranked-choice voting works for 3-seat NJ Board of Education elections, plus an interactive ballot simulator.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Oswald:wght@400;500;600&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container site-header__row">
+    <a href="index.html" class="brand" aria-label="BetterBallot Initiative home">
+      <img src="assets/logo.png" alt="">
+      <span class="brand__name">BetterBallot<span>Initiative</span></span>
+    </a>
+    <nav class="nav-desktop" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="what-is-rcv.html" aria-current="page">What is RCV?</a>
+      <a href="about.html">About Us</a>
+      <a class="nav-ig" href="https://www.instagram.com/betterballotinitiative/" target="_blank" rel="noopener">Instagram</a>
+    </nav>
+    <div class="header-actions">
+      <a href="get-involved.html" class="btn btn--primary nav-desktop-cta">Get Involved</a>
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M2 5H18M2 10H18M2 15H18" stroke="currentColor" stroke-width="2"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <div class="mobile-nav" id="mobile-nav">
+    <a href="index.html">Home</a>
+    <a href="what-is-rcv.html" aria-current="page">What is RCV?</a>
+    <a href="about.html">About Us</a>
+    <a href="https://www.instagram.com/betterballotinitiative/" target="_blank" rel="noopener">Instagram</a>
+    <div class="nav-cta"><a href="get-involved.html" class="btn btn--primary btn--block">Get Involved</a></div>
+  </div>
+</header>
+
+<main>
+
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow" style="color:#1D4ED8;">The Mechanics</span>
+      <h1 class="display-xl mt-16">How ranked-choice voting works.</h1>
+      <p class="body-lg text-mid mt-16" style="max-width:62ch;">NJ school boards typically elect three seats at once to three-year terms. Proportional RCV fills all three seats in a single election, so the winners reflect the range of views in the district — not just whoever finishes first in a crowded field.</p>
+    </div>
+  </section>
+
+  <!-- THRESHOLD FORMULA -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow" style="color:#1D4ED8;">The Threshold</span>
+        <h2 class="display-lg">The 25% winning threshold.</h2>
+        <p class="body-lg text-mid">To fill 3 seats fairly, a candidate needs roughly a quarter of the vote to win — known as the Droop quota. It's the smallest share of the vote that only 3 candidates can possibly reach.</p>
+      </div>
+      <div class="formula reveal">
+        <span class="body" style="color:#B8C1D6;">Threshold&nbsp;=</span>
+        <span class="formula__frac">
+          <span>Total Votes</span>
+          <span class="rule"></span>
+          <span>Seats (3) + 1</span>
+        </span>
+        <span class="body" style="color:#B8C1D6;">+&nbsp;1&nbsp;vote</span>
+        <span class="body" style="color:#fff; margin-left:auto;">&asymp; 25% of all ballots cast</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4 STEPS -->
+  <section class="section section--paper">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow" style="color:#1D4ED8;">Step By Step</span>
+        <h2 class="display-lg">From ballot to seat, in four steps.</h2>
+      </div>
+      <div class="steps reveal">
+        <div class="step">
+          <span class="step__num">01</span>
+          <h3 class="heading-sm">Rank</h3>
+          <p class="body-sm text-mid">Voters rank candidates in order of preference — 1st, 2nd, 3rd, and so on.</p>
+        </div>
+        <div class="step">
+          <span class="step__num">02</span>
+          <h3 class="heading-sm">Threshold</h3>
+          <p class="body-sm text-mid">Any candidate who reaches the ~25% threshold wins a seat immediately.</p>
+        </div>
+        <div class="step">
+          <span class="step__num">03</span>
+          <h3 class="heading-sm">Surplus Transfer</h3>
+          <p class="body-sm text-mid">A winner's excess votes beyond the threshold transfer to those voters' next choice.</p>
+        </div>
+        <div class="step">
+          <span class="step__num">04</span>
+          <h3 class="heading-sm">Elimination</h3>
+          <p class="body-sm text-mid">The lowest-ranked candidate is eliminated and their votes transfer, repeating until all 3 seats are filled.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPARISON TABLE -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow" style="color:#1D4ED8;">The Comparison</span>
+        <h2 class="display-lg">Plurality vs. proportional RCV.</h2>
+      </div>
+      <div class="table-scroll reveal">
+        <table class="compare-table">
+          <thead>
+            <tr>
+              <th scope="col">&nbsp;</th>
+              <th scope="col">Traditional "Vote for 3"</th>
+              <th scope="col">Proportional RCV</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Ballot</th>
+              <td>Mark up to 3 candidates, no ranking</td>
+              <td>Rank candidates in order of preference</td>
+            </tr>
+            <tr>
+              <th scope="row">Vote splitting</th>
+              <td>Similar candidates can split a bloc's votes and lose</td>
+              <td>Ranking a backup choice never hurts your first choice</td>
+            </tr>
+            <tr>
+              <th scope="row">Winning threshold</th>
+              <td>Top 3 vote-getters win, regardless of share</td>
+              <td>Candidates need roughly 25% support to win a seat</td>
+            </tr>
+            <tr>
+              <th scope="row">Wasted votes</th>
+              <td>Votes for non-winning or over-threshold candidates are wasted</td>
+              <td>Surplus and eliminated votes transfer to a next choice</td>
+            </tr>
+            <tr>
+              <th scope="row">Campaign incentive</th>
+              <td>Appeal to a narrow base large enough to place top 3</td>
+              <td>Build broad coalitions across the district</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- BALLOT SIMULATOR -->
+  <section class="section section--paper">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow" style="color:#1D4ED8;">Try It Yourself</span>
+        <h2 class="display-lg">3-seat ballot simulator.</h2>
+        <p class="body-lg text-mid">Rank your top 3 of these 5 mock candidates, then run the tabulation against a sample electorate of 140 ballots to see how proportional RCV fills the board.</p>
+      </div>
+
+      <div class="simulator reveal" id="ballot-simulator">
+        <div class="simulator__head">
+          <span class="heading-sm">Mock BoE Ballot &middot; 3 Seats</span>
+          <span class="tag tag--dark">Sample, not a real election</span>
+        </div>
+        <div class="simulator__body">
+          <div class="ballot-list">
+            <div class="ballot-row" data-candidate="Alvarez">
+              <span class="ballot-row__name">Alvarez</span>
+              <div class="rank-buttons" role="group" aria-label="Rank Alvarez">
+                <button type="button" class="rank-btn" data-rank="1" aria-pressed="false">1</button>
+                <button type="button" class="rank-btn" data-rank="2" aria-pressed="false">2</button>
+                <button type="button" class="rank-btn" data-rank="3" aria-pressed="false">3</button>
+              </div>
+            </div>
+            <div class="ballot-row" data-candidate="Whitfield">
+              <span class="ballot-row__name">Whitfield</span>
+              <div class="rank-buttons" role="group" aria-label="Rank Whitfield">
+                <button type="button" class="rank-btn" data-rank="1" aria-pressed="false">1</button>
+                <button type="button" class="rank-btn" data-rank="2" aria-pressed="false">2</button>
+                <button type="button" class="rank-btn" data-rank="3" aria-pressed="false">3</button>
+              </div>
+            </div>
+            <div class="ballot-row" data-candidate="Okafor">
+              <span class="ballot-row__name">Okafor</span>
+              <div class="rank-buttons" role="group" aria-label="Rank Okafor">
+                <button type="button" class="rank-btn" data-rank="1" aria-pressed="false">1</button>
+                <button type="button" class="rank-btn" data-rank="2" aria-pressed="false">2</button>
+                <button type="button" class="rank-btn" data-rank="3" aria-pressed="false">3</button>
+              </div>
+            </div>
+            <div class="ballot-row" data-candidate="Delgado">
+              <span class="ballot-row__name">Delgado</span>
+              <div class="rank-buttons" role="group" aria-label="Rank Delgado">
+                <button type="button" class="rank-btn" data-rank="1" aria-pressed="false">1</button>
+                <button type="button" class="rank-btn" data-rank="2" aria-pressed="false">2</button>
+                <button type="button" class="rank-btn" data-rank="3" aria-pressed="false">3</button>
+              </div>
+            </div>
+            <div class="ballot-row" data-candidate="Brennan">
+              <span class="ballot-row__name">Brennan</span>
+              <div class="rank-buttons" role="group" aria-label="Rank Brennan">
+                <button type="button" class="rank-btn" data-rank="1" aria-pressed="false">1</button>
+                <button type="button" class="rank-btn" data-rank="2" aria-pressed="false">2</button>
+                <button type="button" class="rank-btn" data-rank="3" aria-pressed="false">3</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="sim-actions">
+            <button type="button" class="btn btn--primary" id="sim-run" disabled>Run Tabulation</button>
+            <button type="button" class="btn" id="sim-reset">Reset Ballot</button>
+            <span class="sim-error" id="sim-error" role="status"></span>
+          </div>
+
+          <div id="sim-results"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow" style="color:#1D4ED8;">Common Questions</span>
+        <h2 class="display-lg">FAQ.</h2>
+      </div>
+      <div class="accordion reveal">
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false" aria-controls="faq-1">
+            <span>Is ranked-choice voting harder to use than regular voting?</span>
+            <span class="plus" aria-hidden="true">+</span>
+          </button>
+          <div class="accordion-panel" id="faq-1">
+            <div class="accordion-panel__inner">Ranking candidates is as simple as filling in a bracket: mark your favorite 1st, your backup 2nd, and so on. You can rank as many or as few candidates as you want, and ranking a backup choice never hurts your first choice.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false" aria-controls="faq-2">
+            <span>Does this require new voting machines?</span>
+            <span class="plus" aria-hidden="true">+</span>
+          </button>
+          <div class="accordion-panel" id="faq-2">
+            <div class="accordion-panel__inner">No. New Jersey's existing certified voting systems already support ranked-choice tabulation, and RCV is in active use in cities and towns across the country on the same equipment used here.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false" aria-controls="faq-3">
+            <span>Is this a partisan proposal?</span>
+            <span class="plus" aria-hidden="true">+</span>
+          </button>
+          <div class="accordion-panel" id="faq-3">
+            <div class="accordion-panel__inner">No. BetterBallot Initiative is nonpartisan. Board of Education elections are already officially nonpartisan in New Jersey, and proportional RCV is a voting method, not a policy platform — it changes how votes are counted, not who is allowed to run.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false" aria-controls="faq-4">
+            <span>Why 3 seats specifically?</span>
+            <span class="plus" aria-hidden="true">+</span>
+          </button>
+          <div class="accordion-panel" id="faq-4">
+            <div class="accordion-panel__inner">Most NJ school districts elect 3 board members at once to 3-year terms in the same election. Proportional RCV is designed for exactly this kind of multi-seat race, filling all 3 seats so the board reflects the electorate as a whole.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false" aria-controls="faq-5">
+            <span>How does a district actually adopt this?</span>
+            <span class="plus" aria-hidden="true">+</span>
+          </button>
+          <div class="accordion-panel" id="faq-5">
+            <div class="accordion-panel__inner">It typically starts with community education and a resolution or public conversation at the Board of Education or municipal level. We help organize that conversation — reach out through the Get Involved page if you want us to present in your district.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <img src="assets/logo.png" alt="BetterBallot Initiative logo" style="height:44px;width:auto;margin-bottom:16px;">
+      <p class="body-sm text-onDark-mid">BetterBallot Initiative: Founded by students, powered by students.</p>
+      <p class="body-sm text-onDark-mid mt-12">We are an all-volunteer group of students.</p>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <div class="footer-links">
+        <a href="mailto:betterballotinitiative@gmail.com">betterballotinitiative@gmail.com</a>
+        <a href="https://www.instagram.com/betterballotinitiative/" target="_blank" rel="noopener">@betterballotinitiative</a>
+      </div>
+    </div>
+    <div>
+      <h4>Site</h4>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="what-is-rcv.html">What is RCV?</a>
+        <a href="about.html">About Us</a>
+        <a href="get-involved.html">Get Involved</a>
+      </div>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>BetterBallot Initiative</span>
+    <span>An all-volunteer student organization &middot; New Jersey</span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/ballot-simulator.js"></script>
+</body>
+</html>

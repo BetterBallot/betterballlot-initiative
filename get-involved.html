@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Get Involved — BetterBallot Initiative</title>
+<meta name="description" content="Volunteer with BetterBallot Initiative — table, present, design, or organize to bring ranked-choice voting to your NJ school district.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Oswald:wght@400;500;600&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container site-header__row">
+    <a href="index.html" class="brand" aria-label="BetterBallot Initiative home">
+      <img src="assets/logo.png" alt="">
+      <span class="brand__name">BetterBallot<span>Initiative</span></span>
+    </a>
+    <nav class="nav-desktop" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="what-is-rcv.html">What is RCV?</a>
+      <a href="about.html">About Us</a>
+      <a class="nav-ig" href="https://www.instagram.com/betterballotinitiative/" target="_blank" rel="noopener">Instagram</a>
+    </nav>
+    <div class="header-actions">
+      <a href="get-involved.html" class="btn btn--primary nav-desktop-cta" aria-current="page">Get Involved</a>
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M2 5H18M2 10H18M2 15H18" stroke="currentColor" stroke-width="2"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <div class="mobile-nav" id="mobile-nav">
+    <a href="index.html">Home</a>
+    <a href="what-is-rcv.html">What is RCV?</a>
+    <a href="about.html">About Us</a>
+    <a href="https://www.instagram.com/betterballotinitiative/" target="_blank" rel="noopener">Instagram</a>
+    <div class="nav-cta"><a href="get-involved.html" class="btn btn--primary btn--block">Get Involved</a></div>
+  </div>
+</header>
+
+<main>
+
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow" style="color:#1D4ED8;">Join Us</span>
+      <h1 class="display-xl mt-16">Get involved.</h1>
+      <p class="body-lg text-mid mt-16" style="max-width:60ch;">Whether you're a student, a parent, or just someone who cares about how your local board gets elected — there's a role for you.</p>
+    </div>
+  </section>
+
+  <!-- EMAIL CALLOUT -->
+  <section class="callout">
+    <div class="container callout__inner reveal">
+      <div>
+        <h2 class="display-lg">Bring RCV to your district.</h2>
+        <p class="body-lg mt-16" style="color:#DCE6FB;">Want to bring RCV to your district? Email us directly at betterballotinitiative@gmail.com.</p>
+      </div>
+      <a href="mailto:betterballotinitiative@gmail.com?subject=Volunteering%20with%20BetterBallot%20Initiative" class="btn btn--onDark">Email Us</a>
+    </div>
+  </section>
+
+  <!-- VOLUNTEER FORM -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow" style="color:#1D4ED8;">Sign Up</span>
+        <h2 class="display-lg">Volunteer with us.</h2>
+        <p class="body-lg text-mid">Tell us a bit about yourself and where you'd like to help. We'll follow up by email.</p>
+      </div>
+
+      <div class="form-block reveal" style="max-width:760px;">
+        <form id="volunteer-form">
+          <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
+          <input type="hidden" name="subject" value="New Volunteer Sign-Up - BetterBallot Initiative">
+          <input type="hidden" name="from_name" value="BetterBallot Initiative Website">
+          <input type="checkbox" name="botcheck" class="hidden" style="display:none">
+
+          <div class="form-row">
+            <label for="full_name">Full Name</label>
+            <input type="text" id="full_name" name="full_name" required autocomplete="name">
+          </div>
+
+          <div class="form-row">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required autocomplete="email">
+          </div>
+
+          <div class="form-row">
+            <label for="district">Town / School District in NJ</label>
+            <input type="text" id="district" name="district" required autocomplete="address-level2">
+          </div>
+
+          <div class="form-row">
+            <label>Areas of Interest</label>
+            <div class="checkbox-grid">
+              <div class="checkbox-item">
+                <input type="checkbox" id="interest-boe" name="areas_of_interest" value="Attending BoE Meetings">
+                <label for="interest-boe">Attending BoE Meetings</label>
+              </div>
+              <div class="checkbox-item">
+                <input type="checkbox" id="interest-tabling" name="areas_of_interest" value="Tabling / Canvassing">
+                <label for="interest-tabling">Tabling / Canvassing</label>
+              </div>
+              <div class="checkbox-item">
+                <input type="checkbox" id="interest-social" name="areas_of_interest" value="Social Media & Design">
+                <label for="interest-social">Social Media &amp; Design</label>
+              </div>
+              <div class="checkbox-item">
+                <input type="checkbox" id="interest-outreach" name="areas_of_interest" value="School Outreach">
+                <label for="interest-outreach">School Outreach</label>
+              </div>
+              <div class="checkbox-item">
+                <input type="checkbox" id="interest-general" name="areas_of_interest" value="General Support">
+                <label for="interest-general">General Support</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <label for="message">Notes / Message (optional)</label>
+            <textarea id="message" name="message"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn--primary btn--block" id="form-submit">Sign Up to Volunteer</button>
+
+          <div class="form-status" id="form-status" role="status"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <img src="assets/logo.png" alt="BetterBallot Initiative logo" style="height:44px;width:auto;margin-bottom:16px;">
+      <p class="body-sm text-onDark-mid">BetterBallot Initiative: Founded by students, powered by students.</p>
+      <p class="body-sm text-onDark-mid mt-12">We are an all-volunteer group of students.</p>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <div class="footer-links">
+        <a href="mailto:betterballotinitiative@gmail.com">betterballotinitiative@gmail.com</a>
+        <a href="https://www.instagram.com/betterballotinitiative/" target="_blank" rel="noopener">@betterballotinitiative</a>
+      </div>
+    </div>
+    <div>
+      <h4>Site</h4>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="what-is-rcv.html">What is RCV?</a>
+        <a href="about.html">About Us</a>
+        <a href="get-involved.html">Get Involved</a>
+      </div>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>BetterBallot Initiative</span>
+    <span>An all-volunteer student organization &middot; New Jersey</span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/volunteer-form.js"></script>
+</body>
+</html>
